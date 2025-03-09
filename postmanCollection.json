@@ -1,0 +1,53 @@
+{
+  "info": {
+    "name": "School Management API"
+  },
+  "item": [
+    {
+      "name": "Add School",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/schools",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "schools"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw":{"name": "Example School",    "address": "123 Education St",  "latitude": 40.7128,    "longitude": -74.0060}
+        }
+      }
+    },
+    {
+      "name": "List Schools",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/schools?latitude=40.7128&longitude=-74.0060",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "schools"],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "40.7128"
+            },
+            {
+              "key": "longitude",
+              "value": "-74.0060"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
