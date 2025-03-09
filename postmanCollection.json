@@ -14,7 +14,7 @@
           }
         ],
         "url": {
-          "raw": "http://localhost:3000/api/schools",
+          "raw": "https://nodejs-api-ivory-xi.vercel.app/api/schools",
           "protocol": "http",
           "host": ["localhost"],
           "port": "3000",
@@ -31,7 +31,7 @@
       "request": {
         "method": "GET",
         "url": {
-          "raw": "http://localhost:3000/api/schools?latitude=40.7128&longitude=-74.0060",
+          "raw": "https://nodejs-api-ivory-xi.vercel.app/api/schools?latitude=40.7128&longitude=-74.0060",
           "protocol": "http",
           "host": ["localhost"],
           "port": "3000",
